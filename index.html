@@ -25,9 +25,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="kill in output | filterBy name in 'killTime' 'solarSystemID' 'victim.characterName' 'victim.shipTypeID' 'attackers[0].characterName' 'attackers[0].corporationName'">
+                    <tr v-for="value in output | filterBy name in 'Date' 'CO' 'TEMP' 'HUMIDITY'">
 
-                    <tr v-for="kill in output">
+                    <tr v-for="name in output">
                         <td>{{values.Date}}</td>
                         <td>{{values.CO}}</td>
                         <td>{{values.TEMP}}</td>
