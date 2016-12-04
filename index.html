@@ -5,11 +5,17 @@
         <meta charset="utf-8">
         <script type="application/javascript" src="main.js"></script>
         <link rel="stylesheet" type="text/css" href="body.css">
+        
+         <!-- vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+     <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     </head>
     <body>
      <div class="ui container">
         <div id=app>
-            <a v-link="'top'"><h3 class="top">Table debug</h3></a>
+            <h3 class="top">Table debug</h3>
 
             <div id="filter-by-stuff">
                 <h4>Search:</h4><input v-model="name">
@@ -21,7 +27,7 @@
                         <th>Time</th>
                         <th>CO ppm</th>
                         <th>TEMP °C</th>
-                        <th>Himidity %</th>
+                        <th>Humidity %</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -38,10 +44,6 @@
         </div>
     </div>
         
-    <!-- vue.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
-    <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   
     </body>
 </html>
