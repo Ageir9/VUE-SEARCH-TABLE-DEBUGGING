@@ -30,13 +30,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="value in output | filterBy name in 'Date' 'CO' 'TEMP' 'HUMIDITY'">
+                    <tr v-repeat="CO | TEMP | HUMIDITY | Date">
 
-                    <tr v-for="name in output">
-                        <td>{{values.Date}}</td>
-                        <td>{{values.CO}}</td>
-                        <td>{{values.TEMP}}</td>
-                        <td>{{values.HUMIDITY}}</td>
+                    <tr v-repeat="name in output">
+                        <td>{{Date}}</td>
+                        <td>{{CO}}</td>
+                        <td>{{TEMP}}</td>
+                        <td>{{HUMIDITY}}</td>
                     </tr>
                 </tbody>
             </table> 

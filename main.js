@@ -10,7 +10,7 @@ new Vue({
         loading : true,
         output: {}
     },
-    attached: function () {
+    created: function () {
         //Þetta virkar einhvernveginn
         var $this = this,
             shipdata;
@@ -20,7 +20,7 @@ new Vue({
                 var strippedData = data;
             });
             console.log(datavalue[1]);
-            $this.$data.output = datavalue;
+            $this.$data.output = datavalue.values;
             console.log($this.output);
             //loading fyrir appid
             $this.loading = false;
