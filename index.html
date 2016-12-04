@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Vue Tabletest</title>
+        <meta charset="utf-8">
+        <script type="application/javascript" src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="body.css">
+    </head>
+    <body>
+     <div class="ui container">
+        <div id=app>
+            <a v-link="'top'"><h3 class="top">Table debug</h3></a>
+
+            <div id="filter-by-stuff">
+                <h4>Search:</h4><input v-model="name">
+            </div>
+            
+            <table id="Tabledisplay" class="ui celled table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>CO ppm</th>
+                        <th>TEMP °C</th>
+                        <th>Himidity %</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="kill in output | filterBy name in 'killTime' 'solarSystemID' 'victim.characterName' 'victim.shipTypeID' 'attackers[0].characterName' 'attackers[0].corporationName'">
+
+                    <tr v-for="kill in output">
+                        <td>{{values.Date}}</td>
+                        <td>{{values.CO}}</td>
+                        <td>{{values.TEMP}}</td>
+                        <td>{{values.HUMIDITY}}</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+    </div>
+        
+    <!-- vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    </body>
+</html>
