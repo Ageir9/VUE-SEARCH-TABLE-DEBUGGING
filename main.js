@@ -15,19 +15,6 @@ new Vue({
         var $this = this,
             shipdata;
         
-        /*
-        $.getJSON("results.json", function (datavalue) {
-
-            $.getJSON("results.json", function (ships) {
-                shipdata = ships;
-                datavalue.forEach(function (element, index, array) {
-                    console.log(element);
-                        return;
-                        
-                    });
-                });
-        
-        */
         $.getJSON("results.json", function (datavalue) {
             datavalue.forEach(function (data) {
                 var strippedData = data;
@@ -38,7 +25,5 @@ new Vue({
             //loading fyrir appid
             $this.loading = false;
         });
-        
-        
     }
 });
