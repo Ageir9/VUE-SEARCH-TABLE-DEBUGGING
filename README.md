@@ -1,2 +1,2 @@
 # VUE-SEARCH-TABLE-DEBUGGING
-shits on fire yo
+Er að reyna að fixa table search úr öðru verkefni
