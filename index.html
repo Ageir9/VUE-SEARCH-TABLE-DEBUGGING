@@ -5,11 +5,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="body.css">
         
-         <!-- vue.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
-         <script src="https://unpkg.com/vue/dist/vue.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
-        <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        
     </head>
     <body>
      <div class="ui container">
@@ -31,17 +27,22 @@
                 </thead>
                 <tbody>
                     <tr v-repeat="CO | TEMP | HUMIDITY | Date">
-
+                    
                     <tr v-repeat="name in output">
-                        <td>{{Date}}</td>
-                        <td>{{CO}}</td>
-                        <td>{{TEMP}}</td>
-                        <td>{{HUMIDITY}}</td>
+                        <td>{{ value.Date }}</td>
+                        <td>{{ value.CO }}</td>
+                        <td>{{ value.TEMP }}</td>
+                        <td>{{ value.HUMIDITY }}</td>
                     </tr>
                 </tbody>
             </table> 
         </div>
     </div>
-    <script type="application/javascript" src="main.js"></script>
+         <!-- vue.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+        <script type="application/javascript" src="main.js"></script>
     </body>
 </html>

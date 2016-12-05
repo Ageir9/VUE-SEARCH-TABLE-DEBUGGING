@@ -16,10 +16,7 @@ new Vue({
             shipdata;
         
         $.getJSON("results.json", function (datavalue) {
-            datavalue.forEach(function (data) {
-                var strippedData = data;
-            });
-            console.log(datavalue[1]);
+            console.log(datavalue);
             $this.$data.output = datavalue.values;
             console.log($this.output);
             //loading fyrir appid
